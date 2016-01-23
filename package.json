@@ -1,0 +1,22 @@
+{
+  "name": "nodehangman",
+  "version": "1.0.0",
+  "description": "hangman game on using node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliezerwohl/nodeHangman.git"
+  },
+  "author": "Elie Wohl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eliezerwohl/nodeHangman/issues"
+  },
+  "homepage": "https://github.com/eliezerwohl/nodeHangman#readme",
+  "dependencies": {
+    "prompt": "^0.2.14"
+  }
+}
