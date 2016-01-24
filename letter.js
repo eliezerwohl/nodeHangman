@@ -1,7 +1,7 @@
 
 
 
-function letter(let){
+function Letter(let){
   console.log("function is running")
   this.charac = let;
   console.log(charac);
@@ -17,7 +17,7 @@ function letter(let){
   }
 }
 
-module.exports = letter;
+module.exports = Letter;
 
 // // PartyBus.js
 
