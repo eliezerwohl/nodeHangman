@@ -1,25 +1,30 @@
 var Letter = require("./letter")
-word("poop");
-checkIfLetterFound("p")
-function word(wrd){
+var something = new Word("apple");
+var somethingElse = something.checkIfLetterFound("p");
+console.log("something else" + somethingElse());
+function Word(wrd){
   this.word = wrd;
   this.lets = [];
   this.found = false;
-  console.log()
   this.getLets = function(){
     for (var i = 0; i < this.word.length; i++) {
       var letter = this.word[i];
       this.lets.push(letter)
-    };
-   
+    }
   }
   this.checkIfLetterFound = function(guessLetter){
+    console.log("guess letter" + guessLetter)
+    console.log(Letter)
     var whatToReturn = 0;
     for (var i = 0; i < this.lets.length; i++) {
       if (this.lets[i] = Letter.charac)  {
-        
+        console.log("match")
+        appear = true;
+        whatToReturn =+1;
+        return checkIfLetterFound
       }
     };
   }
-
 }
+
+module.exports = Word;
