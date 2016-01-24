@@ -1,22 +1,21 @@
 
-
-
 function Letter(let){
   console.log("function is running")
   this.charac = let;
-  console.log(charac);
   this.appear = false;
   this.letterRender = function(){
-    console.log(charc)
-    if (letter.charac = false){
+    if (this.appear === false){ 
+      return "__"
+    }
+    else (this.appear === true){
       console.log("no charc")
+      return this.charac;
     }
-    else{
-      console.log("else")
-    }
+    // else{
+    //   console.log("else")
+    // }
   }
 }
-
 module.exports = Letter;
 
 // // PartyBus.js

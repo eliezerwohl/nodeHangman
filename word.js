@@ -1,7 +1,7 @@
 var Letter = require("./letter")
 var something = new Word("apple");
 var somethingElse = something.checkIfLetterFound("p");
-console.log("something else" + somethingElse());
+console.log("something else" + somethingElse);  
 function Word(wrd){
   this.word = wrd;
   this.lets = [];
@@ -14,15 +14,18 @@ function Word(wrd){
   }
   this.checkIfLetterFound = function(guessLetter){
     console.log("guess letter" + guessLetter)
-    console.log(Letter)
+    console.log(new Letter(guessLetter))
+    var guessedLetter = new Letter(guessLetter);
+    this.lets.push(guessedLetter);
+    // return "hey there in quotes";
     var whatToReturn = 0;
     for (var i = 0; i < this.lets.length; i++) {
-      if (this.lets[i] = Letter.charac)  {
+      if (this.lets[i].charac === guessLetter)  {
         console.log("match")
         appear = true;
-        whatToReturn =+1;
+        whatToReturn += 1;
         return checkIfLetterFound
-      }
+      }  
     };
   }
 }
