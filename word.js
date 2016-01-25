@@ -1,7 +1,7 @@
 var Letter = require("./letter")
 var something = new Word("apple");
-var somethingElse = something.checkIfLetterFound("p");
-console.log("something else" + somethingElse);  
+// var somethingElse = something.checkIfLetterFound("a");
+// console.log("something else" + somethingElse);  
 function Word(wrd){
   this.word = wrd;
   this.lets = [];
@@ -9,7 +9,7 @@ function Word(wrd){
   this.getLets = function(){
     for (var i = 0; i < this.word.length; i++) {
       var letter = this.word[i];
-      this.lets.push(letter)
+      this.lets.push(Letter)
     }
   }
   this.checkIfLetterFound = function(guessLetter){
@@ -26,8 +26,19 @@ function Word(wrd){
         whatToReturn += 1;
         return checkIfLetterFound
       }  
-    };
+    }
+  }
+  this.didWeFindTheWord = function(){
+    if (this.let.every(curLet) = true){
+      return found
+    } 
+  } 
+  this.WordRender = function(){
+    var str = '';
+    for (var i=0; i <this.lets.length; i++){
+      str+=this.lets[i].letterRender();
+    }
+    return str;
   }
 }
-
 module.exports = Word;

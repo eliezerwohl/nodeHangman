@@ -7,7 +7,7 @@ function Letter(let){
     if (this.appear === false){ 
       return "__"
     }
-    else (this.appear === true){
+    else if (this.appear === true){
       console.log("no charc")
       return this.charac;
     }
