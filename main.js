@@ -16,7 +16,7 @@ var game = {
     prompt.get(['Guess letter friendo!'], function (err, result) {  
       // friendo is a homestarrunner refrence
       console.log("The Letter or space you guessed is" + result.guessLetter);
-      var findHowManyOfUserGuess = currentWrd.checkIfLetterFound(result.guessLetter);
+      var findHowManyOfUserGuess = currentWord.checkIfLetterFound(result.guessLetter);
       if (findHowManyOfUserGuess === 0){
         console.log("I guess'you gusses wrong!'")  
         // assignment called for gusses wrong. i got creative
@@ -24,15 +24,15 @@ var game = {
       }
       else{
         console.log("you guessed correctly!  here's a gold star!")
-        if (currentWrd.didWeFindTheWord() = true){
+        if (currentWord.didWeFindTheWord() = true){
           console.log("you won the game! also, this game works!")
           return true
         }
       }
     });
     console.log("guessing remaining" + game.guessesRemaining.val)
-    console.log(wordRender(currentWrd))
-    if ((game.guessesRemaining > 0) && (currentWrd.found === false)){
+    console.log(this.currentWord.WordRender(this.currentWord))
+    if ((game.guessesRemaining > 0) && (currentWord.found === false)){
         keepPromptingUser();
     }
     else if (guessesRemaining === 0){
@@ -40,7 +40,7 @@ var game = {
       console.log(this.currentWord);
     }
     else{
-      console.log(wordRender(currentWrd))
+      console.log(wordRender(currentWord))
     }
   },   
 }  //end start

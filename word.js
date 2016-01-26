@@ -31,8 +31,7 @@ function Word(wrd){
   this.didWeFindTheWord = function(){
     if (this.let.every(curLet) = true){
       return found
-    } 
-  } 
+    }  
   this.WordRender = function(){
     var str = '';
     for (var i=0; i <this.lets.length; i++){
